@@ -7,22 +7,40 @@
     <style>
         body {
             font-family: Palatino Linotype, sans-serif;
-            margin: 20px;
+            margin: 0px;
+        }
+
+  #bitcoinBall {
+            width: 100px;
+            height: 100px;
+            background-image: url('Bitcoinlogo.png'); /* Pfad zum Bitcoin-Logo-Bild */
+            background-size: cover;
+            position: absolute;
+            animation: bounce 0.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                top: 0;
+            }
+            to {
+                top: 40vh;
+            }
         }
 
         header {
-            text-align: center;
-            color: #ff9900;
-            
+            text-align: center;  
+	    color: black;      
             padding: 20px;
-            background-color: #ff9900;
+            background-color: #FFFFFF;
             
         }
 
         section {
             text-align: center;
+	    color: black;
             margin: 20px 0;
-            background-color: #ff9900;
+            background-color: #FFFFFF;
         }
 
         img {
@@ -33,39 +51,70 @@
 
         footer {
             text-align: center;
+	    color: #FFFFFF;
             padding: 10px;
-            background-color: #f2f2f2;
+            background-color: #35312E;
         }
+
+.content {
+            max-width: 600px; /* Setze die gewünschte maximale Breite */
+            margin: 0 auto; /* Zentriere das Element auf der Seite */
     </style>
+
 </head>
 <body>
 
+  <div id="bitcoinBall"></div>
+
     <header>
-        <h1>Geilo Meilo</h1>
-        <p>Endlich mit den Personen aus dem Buch leben</p>
+        <h1>BiBooks</h1>
+        <p>Sich mit tollen Geschichten endlich verbunden fühlen. Wort wörtlich.</p>
     </header>
 
     <section>
-<p>Willkommen auf im Internetshop von Geilo Meilo.</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>Willkommen im Internetshop von BiBooks.</p>
+
+        <div class="content">
+        <p>
+            Dies ist ein Beispieltext, und hier wird der Text in einer begrenzten Breite angezeigt.jughgvhgvhgf
+            Wenn der Text zu lang wird, wird er umbrochen und in einer neuen Zeile fortgesetzt.
+        </p>
+    </div>
+	
         <h2>Bücher</h2>
 
-     <figure>
-            <img src="images/Coverbild.jpg">
-            <figcaption>
-                <p>Der Graf von Monte Christo von Alexandre Dumas erweitert durch B. Gossbach.</p>
-                <p>Nachdem Dantès zu Unrecht des Verrats beschuldigt wird und im Gefängnis verrottet, tut sich eine Gelegnheit auf.</p>
+<P> Der Graf von Monte Christo von Alexandre Dumas erweitert durch B. Gossbach. </p>
 
+     <figure>
+            <img src="Coverbild.jpg">
+            <figcaption>
+
+<div class="content">
+        <p>
+            Der Graf von Monte Christo von Alexandre Dumas erweitert durch B. Gossbach.
+Nachdem Dantès zu Unrecht des Verrats beschuldigt wird und im Gefängnis verrottet, tut sich eine Gelegnheit auf.
+        </p>
+    </div>
+
+  /*              <p>Der Graf von Monte Christo von Alexandre Dumas erweitert durch B. Gossbach.</p>
+                <p>Nachdem Dantès zu Unrecht des Verrats beschuldigt wird und im Gefängnis verrottet, tut sich eine Gelegnheit auf.</p>
+*/
                 <p>70 Seiten, 7,00€/50000 Sat</p>
             </figcaption>
           
      </figure>
 
-        <figure>
-            <img src="images/Coverbild.jpg">
-            <figcaption>Bildbeschreibung Geilo Meiloasooigfhlaiejfhpawiejfhaisejf.</figcaption>
-    </figure>
+<h3>Bestellung</h3>
+<p>E-Mail:</p>
+<P>Nostr:</p>
+<P>Twitter:</p>
         
+<p>Zahlungsabwicklung wird individuell vereinbart.</p>
+
+
+
+
+<p>&copy; 2023 Dein Name. Alle Rechte vorbehalten.</p>
     </section>
 
     <footer>
